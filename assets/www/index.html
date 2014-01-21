@@ -3,36 +3,54 @@
 <head>
 <title>WhatSnap</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="css/jquery.mobile-1.4.0.min.css"/>
 <link rel="stylesheet" type="text/css" href="css/index.css" />
-<link rel="stylesheet" type="text/css" href="jquery/css/jquery.mobile-1.2.0.min.css"/>
 <script type="text/javascript" charset="utf-8" src="js/cordova.js"></script>
 <script type="text/javascript" charset="utf-8" src="js/jquery-2.0.2.min.js"></script>
 <script type="text/javascript" charset="utf-8" src="js/jquery.mobile-1.4.0.min.js"></script>
+<script type="text/javascript" charset="utf-8" src="js/index.js"></script>
 
-
-<!-- <script type="text/javascript" charset="utf-8">
+<script type="text/javascript" charset="utf-8">
 //*********************************************************
 // Wait for Cordova to Load
 //*********************************************************
 
-document.addEventListener("deviceready", onDeviceReady, false);
-
 function onDeviceReady() {
-
+	navigator.splashscreen.hide();
 }
-</script> -->
+document.addEventListener("deviceready", onDeviceReady, false);
+</script> 
 </head>
+
+
 <body>
-<!---------------------------------- Main Page --------------------------------------->
-	<div data-role="page" id="main">
+<!-- Main Page -->
+
+<div id="fade"></div>
+
+
+
+<div class="pages">
+	<div class="start-page" id="page-intro">
+			<div class="upper-bar">
+				<h1>What Snap</h1>
+			</div>
+			<p>lalalalalala</p>
+	</div>
+</div>
+
+
+
+<!-- 	<div data-role="page" id="main">
 		<div data-role="header">
 			<h1>PhoneGap Demo</h1>
 		</div>
 		<div data-role="content">
 			Hello, this is JQuery Mobile running in PhoneGap 2
-			<p>nai peteu sa mergisdfsd!</p>
+			<p>nai peteu sa faci caca!</p>
 		</div>
-	</div>
+	</div> -->
+
 </body>
 </html>
 </html>

@@ -7,16 +7,129 @@ div#fade {
     z-index: 9999;
   }
 
-div.pages{
-	position:absolute;
+
+
+.ui-overlay-a{
+	background-color:black;		/*ca sa imi faca prima tranzitie neagra*/
+}
+
+
+
+/*div.pages{
+	position:relative;
 	color:red;
 	top:20px;
 }
+*/
+/*body {
+    background:black;
+}*/
 
-body{
-	background-color: black;
+/*.start-page img{
+    position:relative;
+    top:61%;
+    width:100%;
+    height:100%;
+}*/
+.header:{
+  /*position:fixed;*/
+  width: 100%; 
+  display: block; 
+  margin: 0 auto;
+}
+.header img{
+  margin: 0 auto !important; 
+  width:100%;
 }
 
-.ui-overlay-a{            // pentru ca sa nu apara frama alba intre splashscreen si continut
-	background-color: black;
+#play{
+
+}
+
+#play img{
+    margin: 0 auto; 
+    width: 40%;
+    left: 0;
+    right: 0;
+    margin-top:20%;
+    margin-right: auto;
+    margin-left: auto;
+    position: absolute;
+}
+
+.baterii{
+  margin-top: 80%;
+  text-align: center;
+}
+
+.baterii img {
+    width: 10%;
+    left: 0;
+    right: 0;
+    margin-right: 4%;
+    margin-left: 4%;
+    position: relative;
+    display: inline-block; 
+
+
+/*    display: inline-block; 
+    margin: 10% auto; 
+    width: 10%;
+    left: 0;
+    right: 0;
+    position: relative;*/
+/*    margin-right: auto;
+    margin-left: auto;
+    left: 0;
+    right: 0;
+    display: block; 
+    margin: 0 auto; 
+    width: 10%;
+    position:relative;
+    display: inline-block;*/
+}
+
+/*.album{
+  position: relative;
+  margin-top:10%;
+}*/
+.photos{
+  position: relative;
+  /*margin-top:5%;*/
+  margin:0 auto;
+}
+
+.album{
+ position: relative;
+  /*margin-top:1%;*/
+   margin:0 auto;
+}
+
+
+.footer{
+  /*position:fixed;*/
+  bottom:0;
+  width: 100%;
+}
+
+.footer p{
+  display:inline;
+  margin: 0 auto;
+}
+
+.ads{
+  left: 3%;
+  position: relative;
+}
+
+.help{
+  float:right;
+  right: 3%;
+  position: relative;
+}
+
+.volume{
+  float:right;
+  right: 5%;
+  position: relative;
 }

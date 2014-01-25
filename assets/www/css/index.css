@@ -1,4 +1,4 @@
-div#fade {
+#fade {
     position: absolute;
     width: 100%;
     height: 100%;
@@ -7,12 +7,20 @@ div#fade {
     z-index: 9999;
   }
 
-
+/*.ui-page {
+    -webkit-backface-visibility: hidden;
+}*/
 
 .ui-overlay-a{
 	background-color:black;		/*ca sa imi faca prima tranzitie neagra*/
 }
 
+
+#game{
+	position: absolute;
+    width: 100%;
+    height: 100%;
+}
 
 
 /*div.pages{

@@ -4,15 +4,18 @@
     height: 100%;
     color: yellow;
     background-color: black;
-    z-index: 9999;
-  }
+	z-index: 9999;
+}
 
 /*.ui-page {
     -webkit-backface-visibility: hidden;
 }*/
 
-.ui-overlay-a{
-	background-color:black;		/*ca sa imi faca prima tranzitie neagra*/
+/*.ui-overlay-a{
+	background-color:black;		ca sa imi faca prima tranzitie neagra
+}*/
+body{
+	background-color: black !important;   /*ca sa imi faca prima tranzitie neagra*/
 }
 
 /*ca sa nu se miste textu din a doua paginaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa*/
@@ -23,58 +26,37 @@
 }*/
 /*ca sa nu se miste textu din a doua a si scoate din js functia si pune clasic a hreffffffffffffffffff*/
 
-
-/*div.pages{
-	position:relative;
-	color:red;
-	top:20px;
-}
-*/
-/*body {
-    background:black;
-}*/
-
-/*.start-page img{
-    position:relative;
-    top:61%;
-    width:100%;
-    height:100%;
-}*/
-.header:{
-  position:fixed;
-  width: 100%; 
-  display: block; 
-  margin: 0 auto;
+.header{
+	width: 100%; 
+	display: block; 
+	margin: 0 auto;
 }
 .header img{
-  margin: 0 auto !important; 
-  width:100%;
+	margin: 0 auto !important; 
+	width:100%;
 }
 
-#play_baterii{
+#start_page{
 
 }
 
 #play{
 	margin: 0 auto; 
     width: 40%;
-    left: 0;
-    right: 0;
-    margin-top:20%;
-    margin-right: auto;
-    margin-left: auto;
-    position: absolute;
+    margin-top:30%;
+	display: -webkit-box;
+    position: relative;
 }
 
 #baterii{
-	margin-top:90%;
+	text-align: center;
+	margin-top:25%
+}
+
+#baterii img{
 	width: 10%;
-    left: 0;
-    right: 0;
     margin-right: 4%;
     margin-left: 4%;
-    position: relative;
-    display: inline-block; 
 }
 
 
@@ -106,42 +88,147 @@
 
 
 .photos{
-  position: relative;
+	margin-top:5%;
+	margin-bottom:0%;
+	position: relative;
   /*margin-top:5%;*/
-  margin:0 auto;
 }
 
 .album{
- position: relative;
-  /*margin-top:1%;*/
-   margin:0 auto;
+	position: relative;
+	/*margin-top:1%;*/
+	margin:0 auto;
 }
 
 
 .footer{
-  position:fixed;
-  bottom:0;
-  width: 100%;
+	position:fixed;
+	bottom:0;
+	width: 100%;
 }
 
 .footer p{
-  display:inline;
-  margin: 0 auto;
+	display:inline;
+	margin: 0 auto;
 }
 
 .ads{
-  left: 3%;
-  position: relative;
+	left: 3%;
+	position: relative;
 }
 
 .help{
-  float:right;
-  right: 3%;
-  position: relative;
+	float:right;
+	right: 3%;
+	position: relative;
 }
 
 .volume{
-  float:right;
-  right: 5%;
+	float:right;
+	right: 5%;
+	position: relative;
+}
+
+#battery{
+	position: absolute;
+	width: 80%;
+	left: 0%;
+	right: 0%;
+	top: 0.8%;
+}
+
+.tools{
+	margin-top: 17%;
+	padding: 2%;
+}
+
+#frame{
+	border-style: solid;
+	padding-bottom:100%;
+
+	position: relative;
+}
+
+#photo{
+	display:block;
+	/*visibility: hidden;*/
+	position: absolute;
+ 	 width: 100%;
+ 	 height: 100%;
+}
+
+.menu{
+	margin-top:3%;
+}
+
+#item, #go, #help{
+	display: inline;
+	position: relative;
+	width: 32%;
+	padding: 0%;
+	margin: 0 auto;
+}
+
+/*//////////////////////////////////////////////////////////////////////////////////////*/
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 13px;
+  line-height: 1.5;
   position: relative;
+}
+.swiper-container {
+  width: 100%;
+  height: 22%;
+  color: #fff;
+  text-align: center;
+  background-color: blueviolet;
+  bottom:0;
+  position: fixed;
+}
+.red-slide {
+  background: #ca4040;
+}
+.blue-slide {
+  background: #4390ee;
+}
+.orange-slide {
+  background: #ff8604;
+}
+.green-slide {
+  background: #49a430;
+}
+.pink-slide {
+  background: #973e76;
+}
+.swiper-slide .title {
+  font-style: italic;
+  font-size: 42px;
+  /*margin-top: 80px;*/
+  margin-bottom: 0;
+  line-height: 45px;
+}
+.pagination {
+  position: relative;
+  z-index: 20;
+  text-align:center;
+  bottom: 16%;
+}
+.swiper-pagination-switch {
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  border-radius: 8px;
+  background: #222;
+  margin-right: 5px;
+  opacity: 0.8;
+  border: 1px solid #fff;
+  cursor: pointer;
+}
+.swiper-visible-switch {
+  background: #aaa;
+}
+.swiper-active-switch {
+  background: #fff;
 }

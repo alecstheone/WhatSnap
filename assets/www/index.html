@@ -4,28 +4,32 @@
 	<title>WhatSnap</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
 	<link rel="stylesheet" type="text/css" href="css/jquery.mobile-1.4.0.min.css"/>
+	<link rel="stylesheet" type="text/css" href="css/idangerous.swiper.css">
 	<link rel="stylesheet" type="text/css" href="css/index.css" />
 	<script type="text/javascript" charset="utf-8" src="js/cordova.js"></script>
 	<script type="text/javascript" charset="utf-8" src="js/jquery-2.0.2.min.js"></script>
 	<script type="text/javascript" charset="utf-8" src="js/jquery.mobile-1.4.0.min.js"></script>
+	<script type="text/javascript" charset="utf-8" src="js/idangerous.swiper-2.4.min.js"></script>
 	<script type="text/javascript" charset="utf-8" src="js/index.js"></script>
 </head>
 
 <body >
 <!-- Main Page -->
 
-<div id="fade"></div>
+<div id="fade"> </div>
 <div data-role="page" id="page1">
 	<div class="header">
 		<img src="whatsnap.jpg">
 	</div>
-	<div data-role="content" id="play_baterii">	
+	<div data-role="content" id="start_page">	
 		<img id="play" src="ic_launcher.png">
-			<img id="baterii" src="battery.png">
-			<img id="baterii" src="battery.png">
-			<img id="baterii" src="battery.png">
-			<img id="baterii" src="battery.png">
-			<img id="baterii" src="battery.png">
+			<div id="baterii">
+				<img src="batteries.png">
+				<img src="batteries.png">
+				<img src="batteries.png">
+				<img src="batteries.png">
+				<img src="batteries.png">
+			</div>
 		<h2 class="photos">img- 32 photos</h2>
 		<h2 class="album">Album 2</h2>
 	</div>
@@ -39,21 +43,45 @@
 
 <div data-role="page" id="page2">
 	<div class="header">
-		<h1>Top Trails</h1>
+		<img id="battery" src="img/battery.png">
 	</div>
-	<div data-role="content">	
-		<p>Looking for the best of the best? Here are the top three trails in California: 
-	  <h3>Mount Whitney</h3>
-      <p>Who can resist the highest point in the lower 48? With views like these, not us.</p>
-      <p>Rating: Difficult</p>
-      <h3>Half Dome</h3>
-      <p>The jewel of Yosemite, the hike to Half Dome is best spread over a couple of days with an overnight in Little Yosemite Valley.</p>
-      <p>Rating: Moderate</p>
-	  <h3>Santa Anita Canyon Loop</h3>
-      <p>A gem of a trail right next to a metropolis, complete with numerous stream crossings, thick forests and a 50-foot waterfall</p>
-      <p>Rating: Easy/Moderate</p>		
+	<div data-role="content" class="tools">	
+		<div id="frame">
+			<img id="photo" src="img/Album1/1.jpg">
+		</div>
+		<div class="menu">
+			<button type="button" id="item">item</button>
+			<button type="button" id="go">GO</button>
+			<button type="button" id="help">ask for help f</button>
+		</div>
 	</div>
+				
+  <div class="swiper-container">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide red-slide">
+        <div class="title">Slide 1</div>
+      </div>
+      <div class="swiper-slide blue-slide">
+        <div class="title">Slide 2</div>
+      </div>
+      <div class="swiper-slide orange-slide">
+        <div class="title">Slide 3</div>
+      </div>
+    </div>
+    <div class="pagination"> </div>
+  </div>
+	  		
+
 </div>
+
+
+
+
+
+
+
+
+
 
 
 </body>

@@ -1,1 +1,1 @@
-A social visual memory developing app
+A social visual memory growing app

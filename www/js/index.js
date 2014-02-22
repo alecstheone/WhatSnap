@@ -12,7 +12,7 @@ document.addEventListener("deviceready", onDeviceReady, false);
 
 function onDeviceReady() {
 
-    // navigator.splashscreen.hide();   //doar pt phonegap adobe build
+    navigator.splashscreen.hide();   //doar pt phonegap adobe build
     $("#fade").fadeOut( 1500,"swing");
 
 
@@ -22,13 +22,13 @@ function onDeviceReady() {
     var yes = new Media("file:///android_asset/www/img/yes.mp3");
     myMedia.play();
     
-	$("#play").click(function() {
+	$("#play").touchstart(function() {
         $(":mobile-pagecontainer").pagecontainer('change', "#page2", { 
 			transition: 'pop',
        		reverse: true
 		});
 		// $("#photo").hide().delay(1000).fadeOut();
-			$("#photo").animate({opacity: 0.0}, 1);
+			// $("#photo").animate({opacity: 0.0}, 1);
     });  
   
 ////aici era
@@ -51,7 +51,7 @@ $(document).on("pagecreate","#page2",function(){
 
     var ct=1;   
 
-        $("#frame").click(function() {
+        $("#frame").touchstart(function() {
             // $.mobile.changePage("#page2", { transition: "pop"});
             // $("#photo").show().delay(100).fadeOut();
             if (ct==1){
@@ -74,10 +74,7 @@ $(document).on("pagecreate","#page2",function(){
             $('#frame').css( "border-color", "green" );
         }, 2000);
     }
-    
-    
-    
-    
+       
 });
 
 $(document).on("pageshow","#page2",function(){

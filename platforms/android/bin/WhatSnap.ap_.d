@@ -35,7 +35,9 @@ C:\Users\Alexandru\Dropbox\Documents\WhatSnap\platforms\android\assets\www\css\j
 C:\Users\Alexandru\Dropbox\Documents\WhatSnap\platforms\android\assets\www\img\Album1 \
 C:\Users\Alexandru\Dropbox\Documents\WhatSnap\platforms\android\assets\www\img\battery.png \
 C:\Users\Alexandru\Dropbox\Documents\WhatSnap\platforms\android\assets\www\img\my.mp3 \
+C:\Users\Alexandru\Dropbox\Documents\WhatSnap\platforms\android\assets\www\img\no.mp3 \
 C:\Users\Alexandru\Dropbox\Documents\WhatSnap\platforms\android\assets\www\img\test.jpg \
+C:\Users\Alexandru\Dropbox\Documents\WhatSnap\platforms\android\assets\www\img\yes.mp3 \
 C:\Users\Alexandru\Dropbox\Documents\WhatSnap\platforms\android\assets\www\img\Album1\1.jpg \
 C:\Users\Alexandru\Dropbox\Documents\WhatSnap\platforms\android\assets\www\img\Album1\11.jpg \
 C:\Users\Alexandru\Dropbox\Documents\WhatSnap\platforms\android\assets\www\img\Album1\2.jpg \

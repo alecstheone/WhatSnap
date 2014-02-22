@@ -34,6 +34,7 @@ C:\Users\Alexandru\Dropbox\Documents\WhatSnap\platforms\android\assets\www\css\i
 C:\Users\Alexandru\Dropbox\Documents\WhatSnap\platforms\android\assets\www\css\jquery.mobile-1.4.0.min.css \
 C:\Users\Alexandru\Dropbox\Documents\WhatSnap\platforms\android\assets\www\img\Album1 \
 C:\Users\Alexandru\Dropbox\Documents\WhatSnap\platforms\android\assets\www\img\battery.png \
+C:\Users\Alexandru\Dropbox\Documents\WhatSnap\platforms\android\assets\www\img\my.mp3 \
 C:\Users\Alexandru\Dropbox\Documents\WhatSnap\platforms\android\assets\www\img\test.jpg \
 C:\Users\Alexandru\Dropbox\Documents\WhatSnap\platforms\android\assets\www\img\Album1\1.jpg \
 C:\Users\Alexandru\Dropbox\Documents\WhatSnap\platforms\android\assets\www\img\Album1\11.jpg \
@@ -46,7 +47,11 @@ C:\Users\Alexandru\Dropbox\Documents\WhatSnap\platforms\android\assets\www\js\id
 C:\Users\Alexandru\Dropbox\Documents\WhatSnap\platforms\android\assets\www\js\index.js \
 C:\Users\Alexandru\Dropbox\Documents\WhatSnap\platforms\android\assets\www\js\jquery-2.0.2.min.js \
 C:\Users\Alexandru\Dropbox\Documents\WhatSnap\platforms\android\assets\www\js\jquery.mobile-1.4.0.min.js \
+C:\Users\Alexandru\Dropbox\Documents\WhatSnap\platforms\android\assets\www\plugins\org.apache.cordova.media \
 C:\Users\Alexandru\Dropbox\Documents\WhatSnap\platforms\android\assets\www\plugins\org.apache.cordova.splashscreen \
+C:\Users\Alexandru\Dropbox\Documents\WhatSnap\platforms\android\assets\www\plugins\org.apache.cordova.media\www \
+C:\Users\Alexandru\Dropbox\Documents\WhatSnap\platforms\android\assets\www\plugins\org.apache.cordova.media\www\Media.js \
+C:\Users\Alexandru\Dropbox\Documents\WhatSnap\platforms\android\assets\www\plugins\org.apache.cordova.media\www\MediaError.js \
 C:\Users\Alexandru\Dropbox\Documents\WhatSnap\platforms\android\assets\www\plugins\org.apache.cordova.splashscreen\www \
 C:\Users\Alexandru\Dropbox\Documents\WhatSnap\platforms\android\assets\www\plugins\org.apache.cordova.splashscreen\www\splashscreen.js \
 C:\Users\Alexandru\Dropbox\Documents\WhatSnap\platforms\android\assets\www\res\icon \

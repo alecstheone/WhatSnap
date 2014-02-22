@@ -59,9 +59,11 @@
     </feature>
 
 
+<gap:plugin name="org.apache.cordova.media" />
 
-
-
+<feature name="Media">
+    <param name="android-package" value="org.apache.cordova.media.AudioHandler" />
+</feature>
 
     <access origin="http://127.0.0.1*" />
 </widget>

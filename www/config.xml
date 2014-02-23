@@ -1,15 +1,20 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="com.Snap.What" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
+<widget xmlns = "http://www.w3.org/ns/widgets"
+		xmlns:gap = "http://phonegap.com/ns/1.0"
+		id        = "com.Snap.What"
+		xmlns:android   = "http://schemas.android.com/apk/res/android"
+		versionCode="10"
+		version   = "1.0.0">
     <name>WhatSnap</name>
     <description>
-        Hello World sample application that responds to the deviceready event.
+        Visual memory developping app.
     </description>
     <author email="support@phonegap.com" href="http://phonegap.com">
         PhoneGap Team
     </author>
     <feature name="http://api.phonegap.com/1.0/device" />
     <preference name="permissions" value="none" />
-    <preference name="orientation" value="default" />
+    <preference name="orientation" value="portrait" />
     <preference name="target-device" value="universal" />
     <preference name="fullscreen" value="true" />
     <preference name="webviewbounce" value="true" />
@@ -52,11 +57,22 @@
 
 
     <gap:plugin name="org.apache.cordova.splashscreen" />
-    
+
     <feature name="SplashScreen">
-        <param name="android-package" value="org.apache.cordova.SplashScreen" />
+        <param name="android-package" value="org.apache.cordova.splashscreen.SplashScreen" />
         <param name="ios-package" value="CDVSplashScreen" />
     </feature>
+
+	<gap:config-file platform="android" parent="/manifest">
+        
+	       <supports-screens 
+				  android:xlargeScreens="false" 
+				  android:largeScreens="false" 
+				  android:smallScreens="false" />
+                <application android:theme="@android:style/Theme.NoTitleBar" >
+				<activity android:theme="@android:style/Theme.NoTitleBar.Fullscreen" ></activity>
+			</application>
+	</gap:config-file>
 
 
 <gap:plugin name="org.apache.cordova.media" />
@@ -64,6 +80,7 @@
 <feature name="Media">
     <param name="android-package" value="org.apache.cordova.media.AudioHandler" />
 </feature>
+
 
     <access origin="http://127.0.0.1*" />
 </widget>

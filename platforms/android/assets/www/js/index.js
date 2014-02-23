@@ -12,7 +12,7 @@ document.addEventListener("deviceready", onDeviceReady, false);
 
 function onDeviceReady() {
 
-    // navigator.splashscreen.hide();   //doar pt phonegap adobe build
+    navigator.splashscreen.hide();   //doar pt phonegap adobe build
     $("#fade").fadeOut( 1500,"swing");
 
 

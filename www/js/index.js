@@ -1,9 +1,9 @@
 //$(document).ready(
-//	function() {
-//		$("#fade").fadeOut( 1500,"swing");
-//	}
+//  function() {
+//      $("#fade").fadeOut( 1500,"swing");
+//  }
 //);
-	
+    
 //*********************************************************
 // Wait for Cordova to Load
 //*********************************************************
@@ -22,18 +22,18 @@ function onDeviceReady() {
     var yes = new Media("file:///android_asset/www/img/yes.mp3");
     myMedia.play();
     
-	$("#play").touchstart(function() {
+    $("#play").touchstart(function() {
         $(":mobile-pagecontainer").pagecontainer('change', "#page2", { 
-			transition: 'pop',
-       		reverse: true
-		});
-		// $("#photo").hide().delay(1000).fadeOut();
-			// $("#photo").animate({opacity: 0.0}, 1);
+            transition: 'pop',
+            reverse: true
+        });
+        // $("#photo").hide().delay(1000).fadeOut();
+            // $("#photo").animate({opacity: 0.0}, 1);
     });  
   
 ////aici era
 
-	
+    
 var mySwiper;
 $(document).on("pagecreate","#page2",function(){
     $('.swiper-container').height($.mobile.getScreenHeight() * .22);
@@ -45,10 +45,37 @@ $(document).on("pagecreate","#page2",function(){
         resistance:'100%'
     });
     
-    
-    
+/////baterie
+    SetProgress(100);//init to 100%; 
     
 
+    
+    function GetProgress(){
+        var curWid = $("#slider .progress")[0].style.width || 100;
+        return parseInt(curWid);
+    }
+    function SetProgress(val){
+        if (val < 0) val = 0;
+        if (val > 100) vall = 100;
+        var color = GetColorForVal(val);
+        $("#slider .progress").css({"background": color, "width": val + "%"});
+        //$("#slider .progressText").text(Math.floor(val) + "%");
+     
+    }
+    function GetColorForVal(val){
+        var red = 0,
+            green = 0;
+        if (val >= 50) {
+            red = 255 - Math.round(((val - 50) / 50) * 255);
+            green = 255;
+        } else {
+            red = 255;
+            green = Math.round(((val) / 50) * 255);
+        }
+        return  "rgb(" + red + "," + green + ",0)";
+    }
+////baerie 
+    
     var ct=1;   
 
         $("#frame").touchstart(function() {
@@ -59,6 +86,8 @@ $(document).on("pagecreate","#page2",function(){
                  yes.play();
                  $("#photo").animate({opacity: 0.0}, {duration:300});
                  ct=0;
+                 var curVal = GetProgress() - 10;
+                 SetProgress(curVal);
                 $('#frame').css( "border-color", "black" );
                  wait(); 
             }

@@ -27,10 +27,10 @@ C:\Users\Alexandru\Dropbox\Documents\WhatSnap\platforms\android\assets\www\plugi
 C:\Users\Alexandru\Dropbox\Documents\WhatSnap\platforms\android\assets\www\res \
 C:\Users\Alexandru\Dropbox\Documents\WhatSnap\platforms\android\assets\www\spec \
 C:\Users\Alexandru\Dropbox\Documents\WhatSnap\platforms\android\assets\www\spec.html \
-C:\Users\Alexandru\Dropbox\Documents\WhatSnap\platforms\android\assets\www\splash.png \
 C:\Users\Alexandru\Dropbox\Documents\WhatSnap\platforms\android\assets\www\whatsnap.jpg \
 C:\Users\Alexandru\Dropbox\Documents\WhatSnap\platforms\android\assets\www\css\idangerous.swiper.css \
 C:\Users\Alexandru\Dropbox\Documents\WhatSnap\platforms\android\assets\www\css\index.css \
+C:\Users\Alexandru\Dropbox\Documents\WhatSnap\platforms\android\assets\www\css\jQMProgressBar.css \
 C:\Users\Alexandru\Dropbox\Documents\WhatSnap\platforms\android\assets\www\css\jquery.mobile-1.4.0.min.css \
 C:\Users\Alexandru\Dropbox\Documents\WhatSnap\platforms\android\assets\www\img\Album1 \
 C:\Users\Alexandru\Dropbox\Documents\WhatSnap\platforms\android\assets\www\img\battery.png \
@@ -47,6 +47,7 @@ C:\Users\Alexandru\Dropbox\Documents\WhatSnap\platforms\android\assets\www\img\A
 C:\Users\Alexandru\Dropbox\Documents\WhatSnap\platforms\android\assets\www\js\cordova.js \
 C:\Users\Alexandru\Dropbox\Documents\WhatSnap\platforms\android\assets\www\js\idangerous.swiper-2.4.min.js \
 C:\Users\Alexandru\Dropbox\Documents\WhatSnap\platforms\android\assets\www\js\index.js \
+C:\Users\Alexandru\Dropbox\Documents\WhatSnap\platforms\android\assets\www\js\jQMProgressBar.js \
 C:\Users\Alexandru\Dropbox\Documents\WhatSnap\platforms\android\assets\www\js\jquery-2.0.2.min.js \
 C:\Users\Alexandru\Dropbox\Documents\WhatSnap\platforms\android\assets\www\js\jquery.mobile-1.4.0.min.js \
 C:\Users\Alexandru\Dropbox\Documents\WhatSnap\platforms\android\assets\www\plugins\org.apache.cordova.media \

@@ -17,9 +17,9 @@ function onDeviceReady() {
 
 
     $("#play").animate({opacity: 1}, 1);///ca sami arate poza play fara 
-    var myMedia = new Media("file:///android_asset/www/img/my.mp3");
-    var no = new Media("file:///android_asset/www/img/no.mp3");
-    var yes = new Media("file:///android_asset/www/img/yes.mp3");
+    var myMedia = new Media("file:///android_asset/www/audio/my.mp3");
+    var no = new Media("file:///android_asset/www/audio/no.mp3");
+    var yes = new Media("file:///android_asset/www/audio/background.mp3");
     myMedia.play();
     
     $("#play").touchstart(function() {
@@ -31,8 +31,7 @@ function onDeviceReady() {
             // $("#photo").animate({opacity: 0.0}, 1);
     });  
   
-////aici era
-
+//****************************************PAGE 2*******************************************
     
 var mySwiper;
 $(document).on("pagecreate","#page2",function(){
@@ -74,7 +73,7 @@ $(document).on("pagecreate","#page2",function(){
         }
         return  "rgb(" + red + "," + green + ",0)";
     }
-////baerie 
+////baterie 
     
     var ct=1;   
 

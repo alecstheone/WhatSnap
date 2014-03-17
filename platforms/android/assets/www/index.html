@@ -14,21 +14,28 @@
 </head>
 
 <body >
-<!-- Main Page -->
+
+<!-- ******************************* PAGE 1 *************************************-->
 
 <div id="fade"> </div>
+<div id="loose"> 
+	<h1>Sorry! You lost! :(</h1>
+	<button type="button" id="go">Retry</button>
+	<button type="button" id="go">EXIT</button>
+	<button type="button" id="go">get more bateries</button>
+</div>
 <div data-role="page" id="page1">
 	<div class="header">
-		<img src="whatsnap.jpg">
+		<img src="img/whatsnap.jpg">
 	</div>
 	<div data-role="content" id="start_page">	
-		<img id="play" src="ic_launcher.png">
+		<img id="play" src="img/ic_launcher.png">
 			<div id="baterii">
-				<img src="batteries.png">
-				<img src="batteries.png">
-				<img src="batteries.png">
-				<img src="batteries.png">
-				<img src="batteries.png">
+				<img src="img/batteries.png">
+				<img src="img/batteries.png">
+				<img src="img/batteries.png">
+				<img src="img/batteries.png">
+				<img src="img/batteries.png">
 			</div>
 		<h2 class="photos">img- 32 photos</h2>
 		<h2 class="album">Album 2</h2>
@@ -40,10 +47,14 @@
 	</div>
 </div>
 
+<!-- ******************************* PAGE 2 *************************************-->
 
 <div data-role="page" id="page2">
-	<div class="header">
-		<img id="battery" src="img/battery.png">
+	<div class="header-two">
+		<div id="slider" class="progressBar">
+			<div class="progress"></div>
+			<!-- <div class="progressText">0%</div> -->
+		</div>
 	</div>
 	<div data-role="content" class="tools">	
 		<div id="frame">
@@ -55,7 +66,9 @@
 			<button type="button" id="help">ask for help f</button>
 		</div>
 	</div>
-				
+
+<!-- ********** slider *********** -->	
+
   <div class="swiper-container">
     <div class="swiper-wrapper">
       <div class="swiper-slide red-slide">

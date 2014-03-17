@@ -11,15 +11,16 @@
 document.addEventListener("deviceready", onDeviceReady, false);
 
 function onDeviceReady() {
-
+    
+    $.mobile.defaultHomeScroll = 0; 
     navigator.splashscreen.hide();   //doar pt phonegap adobe build
     $("#fade").fadeOut( 1500,"swing");
 
 
     $("#play").animate({opacity: 1}, 1);///ca sami arate poza play fara 
-    var myMedia = new Media("file:///android_asset/www/audio/my.mp3");
+    var myMedia = new Media("file:///android_asset/www/audio/background.mp3");
     var no = new Media("file:///android_asset/www/audio/no.mp3");
-    var yes = new Media("file:///android_asset/www/audio/background.mp3");
+    var yes = new Media("file:///android_asset/www/audio/yes.mp3");
     myMedia.play();
     
     $("#play").touchstart(function() {
@@ -31,8 +32,9 @@ function onDeviceReady() {
             // $("#photo").animate({opacity: 0.0}, 1);
     });  
   
+
 //****************************************PAGE 2*******************************************
-    
+
 var mySwiper;
 $(document).on("pagecreate","#page2",function(){
     $('.swiper-container').height($.mobile.getScreenHeight() * .22);
@@ -48,31 +50,48 @@ $(document).on("pagecreate","#page2",function(){
     SetProgress(100);//init to 100%; 
     
 
-    
     function GetProgress(){
         var curWid = $("#slider .progress")[0].style.width || 100;
         return parseInt(curWid);
     }
+
     function SetProgress(val){
         if (val < 0) val = 0;
-        if (val > 100) vall = 100;
+        if (val > 100) val = 100;
         var color = GetColorForVal(val);
         $("#slider .progress").css({"background": color, "width": val + "%"});
         //$("#slider .progressText").text(Math.floor(val) + "%");
-     
-    }
-    function GetColorForVal(val){
-        var red = 0,
-            green = 0;
-        if (val >= 50) {
-            red = 255 - Math.round(((val - 50) / 50) * 255);
-            green = 255;
-        } else {
-            red = 255;
-            green = Math.round(((val) / 50) * 255);
+        if (val < 20){
+            pulsate(".progress");
         }
-        return  "rgb(" + red + "," + green + ",0)";
+        if (val == 0 ) {
+            pulsate(".progressBar");
+            setTimeout(function() {
+                $("#loose").css("visibility", "visible");
+                $("#loose").animate({ opacity: 1 }, 500);
+            }, 5000);
+        }    
     }
+
+function GetColorForVal(val){
+    var red = 0,
+        green = 0;
+    if (val >= 50) {
+        red = 255 - Math.round(((val - 50) / 50) * 255);
+        green = 255;
+    } else {
+        red = 255;
+        green = Math.round(((val) / 50) * 255);
+    }
+    return  "rgb(" + red + "," + green + ",0)";
+}
+
+function pulsate(element) { 
+    $(element || this).animate({ opacity: 0 }, 500, function() { 
+        $(this).animate({ opacity: 1 }, 500, pulsate); }); 
+} 
+
+
 ////baterie 
     
     var ct=1;   

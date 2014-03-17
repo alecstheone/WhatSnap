@@ -9,7 +9,19 @@
     display:block;
 }
 
-
+#loose {
+	opacity: 0;
+	visibility: hidden;
+    position: fixed;
+    width: 100%!important;
+    height: 100%!important;
+    background-color: black;
+	z-index: 9999;
+	top:0px;
+    left:0px;
+    display:block;
+    color:white;
+}
 
 .ui-page {
     -webkit-backface-visibility: hidden;
@@ -182,16 +194,17 @@
 
 .progressBar{
     position: absolute;
-/*     box-sizing: border-box; */
+/*    box-sizing: border-box;*/
     box-shadow: 1px 1px 3px #777 inset  ;
     -webkit-box-shadow: 1px 1px 6px #777 inset;
     height: 100%;
-/*     max-height: 24px; */
-    /*overflow: hidden;*/
+/*    max-height: 24px;
+    overflow: hidden;*/
     width: 100%;
     border: 1px solid rgb(193, 193, 193);
     background-color: rgb(224, 224, 224);
     border-radius: 6px;
+    -webkit-transform: translateZ(0);
 }
 
 .progress {
@@ -201,12 +214,13 @@
     -webkit-box-shadow: inset 0px 0 5px 0 #777;
     right: 0px;
     height: 100%;
-/*     margin-top: 0px; */
+/*    margin-top: 0px;*/
     background-color: orange; 
     border-top-right-radius: 6px;
     border-bottom-right-radius: 6px;   
-    transition-duration: 0.5s;
-    -webkit-transition-duration: 0.5s; /* for Safari */;
+    -webkit-transition: width 0.5s, background 0.5s; /* For Safari 3.1 to 6.0 */
+    transition: width 0.5s, background 0.5s;
+    -webkit-transform: translateZ(0);
 }
 .progressText {
     position: absolute;

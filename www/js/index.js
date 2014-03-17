@@ -46,7 +46,8 @@ $(document).on("pagecreate","#page2",function(){
         resistance:'100%'
     });
     
-/////baterie
+//////////////////////////////////////battery///////////////////////////////////
+
     SetProgress(100);//init to 100%; 
     
 
@@ -92,7 +93,7 @@ function pulsate(element) {
 } 
 
 
-////baterie 
+//////////////////////////////////////end battery///////////////////////////////////
     
     var ct=1;   
 

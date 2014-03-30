@@ -44,6 +44,18 @@ $(document).on("pagecreate","#page2",function(){
         paginationClickable: false,
         momentumBounceRatio:1,
         resistance:'100%'
+        
+//        onTouchMove: function(swiper){
+//            sliding=true;
+//        },
+//        
+//        onSlideReset: function(swiper){
+//            sliding=true;
+//            setTimeout(function() {
+//                sliding=false;
+//            });
+//        }
+              
     });
     
 //////////////////////////////////////battery///////////////////////////////////
@@ -123,11 +135,45 @@ function pulsate(element) {
         }, 2000);
     }
        
+       
+    $('.image').css("width", $( window ).width()/3 - 0.05 * $( window ).width());
+    $('.image').css("height", $(".image").width());
+    $('.image').css("margin-top", ($(".swiper-container").height() - $('.image').height())/2);
+    
+    $('.swiper-pagination-switch').css('width', $(window).width()/3);
+    
+    mySwiper.addCallback('TouchStart', function(swiper){
+        allowSelect = true;
+    });
+ 
+    mySwiper.addCallback('TouchMove', function(swiper){
+        allowSelect = false;
+    });
+    
+     mySwiper.addCallback('TouchEnd', function(swiper){
+         setTiemout(function(){
+             allowSelect = true;
+         },100)
+
+    });
+
+       
+
+       $( document ).on( "vclick", ".image", function() {      
+           if(allowSelect){
+               if($(this).hasClass("selected"))
+                    $(this).removeClass("selected");
+               else
+                    $(this).addClass("selected");  
+           }
+        });
+       
 });
 
 $(document).on("pageshow","#page2",function(){
     $('.swiper-container').css("width", "100%").css("height", "22%");
     mySwiper.resizeFix();
+    sliding = false;
 });
 
 

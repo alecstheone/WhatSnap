@@ -31,6 +31,15 @@ C:\Users\Alexandru\Dropbox\Documents\WhatSnap\platforms\android\assets\www\audio
 C:\Users\Alexandru\Dropbox\Documents\WhatSnap\platforms\android\assets\www\css\idangerous.swiper.css \
 C:\Users\Alexandru\Dropbox\Documents\WhatSnap\platforms\android\assets\www\css\index.css \
 C:\Users\Alexandru\Dropbox\Documents\WhatSnap\platforms\android\assets\www\css\jquery.mobile-1.4.0.min.css \
+C:\Users\Alexandru\Dropbox\Documents\WhatSnap\platforms\android\assets\www\img\1_1.jpg \
+C:\Users\Alexandru\Dropbox\Documents\WhatSnap\platforms\android\assets\www\img\1_2.jpg \
+C:\Users\Alexandru\Dropbox\Documents\WhatSnap\platforms\android\assets\www\img\1_3.jpg \
+C:\Users\Alexandru\Dropbox\Documents\WhatSnap\platforms\android\assets\www\img\1_4.jpg \
+C:\Users\Alexandru\Dropbox\Documents\WhatSnap\platforms\android\assets\www\img\1_5.jpg \
+C:\Users\Alexandru\Dropbox\Documents\WhatSnap\platforms\android\assets\www\img\1_6.jpg \
+C:\Users\Alexandru\Dropbox\Documents\WhatSnap\platforms\android\assets\www\img\1_7.jpg \
+C:\Users\Alexandru\Dropbox\Documents\WhatSnap\platforms\android\assets\www\img\1_8.jpg \
+C:\Users\Alexandru\Dropbox\Documents\WhatSnap\platforms\android\assets\www\img\1_9.jpg \
 C:\Users\Alexandru\Dropbox\Documents\WhatSnap\platforms\android\assets\www\img\Album1 \
 C:\Users\Alexandru\Dropbox\Documents\WhatSnap\platforms\android\assets\www\img\batteries.png \
 C:\Users\Alexandru\Dropbox\Documents\WhatSnap\platforms\android\assets\www\img\battery.png \
@@ -44,7 +53,7 @@ C:\Users\Alexandru\Dropbox\Documents\WhatSnap\platforms\android\assets\www\img\A
 C:\Users\Alexandru\Dropbox\Documents\WhatSnap\platforms\android\assets\www\img\Album1\4.jpg \
 C:\Users\Alexandru\Dropbox\Documents\WhatSnap\platforms\android\assets\www\img\Album1\5.jpg \
 C:\Users\Alexandru\Dropbox\Documents\WhatSnap\platforms\android\assets\www\js\cordova.js \
-C:\Users\Alexandru\Dropbox\Documents\WhatSnap\platforms\android\assets\www\js\idangerous.swiper-2.4.min.js \
+C:\Users\Alexandru\Dropbox\Documents\WhatSnap\platforms\android\assets\www\js\idangerous.swiper-2.5.1.min.js \
 C:\Users\Alexandru\Dropbox\Documents\WhatSnap\platforms\android\assets\www\js\index.js \
 C:\Users\Alexandru\Dropbox\Documents\WhatSnap\platforms\android\assets\www\js\jquery-2.0.2.min.js \
 C:\Users\Alexandru\Dropbox\Documents\WhatSnap\platforms\android\assets\www\js\jquery.mobile-1.4.0.min.js \

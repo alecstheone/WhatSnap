@@ -268,6 +268,7 @@ body, html{
 .swiper-slide{
 	height:100%!important;
 }
+
 .red-slide {
 	background: #ca4040;
 }
@@ -277,22 +278,21 @@ body, html{
 .orange-slide {
 	background: #ff8604;
 }
-.green-slide {
-	background: #49a430;
+
+.image {	
+	margin:1.2%;
+}
+
+.selected {
+	border-style: solid;
+	border-color: black;
+	border-width: 3px;.
+	margin:0px!important;
 }
 /*.swiper-slide, .swiper-slide-visible, .swiper-slide-active{
 	height:50%;
 }*/
-.pink-slide {
-	background: #973e76;
-}
-.swiper-slide .title {
-	font-style: italic;
-	font-size: 42px;
-	/*margin-top: 80px;*/
-	margin-bottom: 0;
-	line-height: 45px;
-}
+
 .pagination {
 	position: relative;
 	z-index: 20;
@@ -308,7 +308,6 @@ body, html{
 	margin-right: 5px;
 	opacity: 0.8;
 	border: 1px solid #fff;
-	cursor: pointer;
 }
 .swiper-visible-switch {
 	background: #aaa;

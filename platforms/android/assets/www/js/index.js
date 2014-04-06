@@ -31,7 +31,7 @@ function onDeviceReady() {
         // $("#photo").hide().delay(1000).fadeOut();
             // $("#photo").animate({opacity: 0.0}, 1);
     });  
-  
+
 
 //****************************************PAGE 2*******************************************
 
@@ -58,6 +58,8 @@ $(document).on("pagecreate","#page2",function(){
               
     });
     
+
+
 //////////////////////////////////////battery///////////////////////////////////
 
     SetProgress(100);//init to 100%; 
@@ -109,29 +111,50 @@ function pulsate(element) {
     
     var ct=1;   
 
-        $("#frame").touchstart(function() {
-            // $.mobile.changePage("#page2", { transition: "pop"});
-            // $("#photo").show().delay(100).fadeOut();
+//        $("#frame").touchstart(function() {
+//            // $.mobile.changePage("#page2", { transition: "pop"});
+//            // $("#photo").show().delay(100).fadeOut();
+//            if (ct==1){
+//                 $("#photo").animate({opacity: 1.0}, {duration:1});
+//                 yes.play();
+//                 $("#photo").animate({opacity: 0.0}, {duration:300});
+//                 ct=0;
+//                 var curVal = GetProgress() - 10;
+//                 SetProgress(curVal);
+//                $('#frame').css( "border-color", "black" );
+//                 wait(); 
+//            }
+//            else {
+//                //fa sunet naspa si reincearca
+//                no.play();
+//            }
+//        }); 
+        
+
+        $(".photo").touchstart(function() {
             if (ct==1){
-                 $("#photo").animate({opacity: 1.0}, {duration:1});
-                 yes.play();
-                 $("#photo").animate({opacity: 0.0}, {duration:300});
+                
+              $(".blur").animate({opacity: 0}, {duration:300});
+              yes.play();
+              $(".blur").animate({opacity: 1}, {duration:300});
+              
                  ct=0;
                  var curVal = GetProgress() - 10;
                  SetProgress(curVal);
-                $('#frame').css( "border-color", "black" );
+
+                $('.photo').css({ "boxShadow": '0px 0px 1px 3px black' });
                  wait(); 
             }
             else {
-                //fa sunet naspa si reincearca
-                no.play();
+                no.play();   //fa sunet naspa si reincearca
             }
         }); 
+        
 
     function wait() {
         setTimeout(function(){
             ct=1;
-            $('#frame').css( "border-color", "green" );
+            $('.photo').css({ "boxShadow": '0px 0px 1px 3px green' });
         }, 2000);
     }
        
@@ -139,6 +162,13 @@ function pulsate(element) {
     $('.image').css("width", $( window ).width()/3 - 0.05 * $( window ).width());
     $('.image').css("height", $(".image").width());
     $('.image').css("margin-top", ($(".swiper-container").height() - $('.image').height())/2);
+    $('.image').css('margin-left', ($(window).width()- 3 * $('.image').width())/4);
+
+    
+    $('.blur').blurjs({
+        source: '.photo',
+        radius: 100
+    });
     
     $('.swiper-pagination-switch').css('width', $(window).width()/3);
     

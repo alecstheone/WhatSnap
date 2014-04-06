@@ -156,21 +156,25 @@
 	padding: 2%;
 }
 
-#frame{
-	border-style: solid;
+.photo{
+	box-shadow: 0 0 1px 3px green;
 	padding-bottom:100%;
-	border-color:green;
 	position: relative;
+	overflow: hidden;
+	background-image:url("../img/Album1/1.jpg");
+	background-size: cover;
 }
 
-#photo{
+.blur{
 	display:block;
 	/*visibility: hidden;*/
 	position: absolute;
- 	 width: 100%;
- 	 height: 100%;
- 	 opacity: 0;
+ 	width: 100%;
+ 	height: 100%; 	
+ 	background-size: contain;
+ 	-webkit-transform: translateZ(0);
 }
+
 
 .menu{
 	margin-top:3%;
@@ -218,8 +222,8 @@
     background-color: orange; 
     border-top-right-radius: 6px;
     border-bottom-right-radius: 6px;   
-    -webkit-transition: width 0.5s, background 0.5s; /* For Safari 3.1 to 6.0 */
-    transition: width 0.5s, background 0.5s;
+    -webkit-transition: width 1s, background 1s; /* For Safari 3.1 to 6.0 */
+    transition: width 1s, background 1s;
     -webkit-transform: translateZ(0);
 }
 .progressText {
@@ -256,11 +260,12 @@ body, html{
 	width: 100%;
 	height: 20%;
 	color: #fff;
-	text-align: center;
-	background-color: rgba(255, 0, 0, 0.06);
+	/*text-align: center;*/
+	background-color: black;
 	bottom:0;
 	position: absolute;
 	display:block;
+	font-size: 0;
 }
 .swiper-wrapper{
 	height:100%!important;
@@ -270,24 +275,38 @@ body, html{
 }
 
 .red-slide {
-	background: #ca4040;
+	background-image: url("../img/film_holes.svg");
+	background-repeat: round;
+	background-size: contain;
 }
 .blue-slide {
-	background: #4390ee;
+	background-image: url("../img/film_holes.svg");
+	background-repeat: round;
+	background-size: contain;
 }
 .orange-slide {
-	background: #ff8604;
+	background-image: url("../img/film_holes.svg");
+	background-repeat: round;
+	background-size: contain;
 }
 
 .image {	
-	margin:1.2%;
+	margin-top: 1%;
+}
+
+.hole {
+	width: 2%;
+	height: 6%;
+	background: grey;
+	display: inline-block;
+	margin-left: 4.3%;
+	margin-top: 1%;
 }
 
 .selected {
-	border-style: solid;
-	border-color: black;
-	border-width: 3px;.
-	margin:0px!important;
+	-moz-box-shadow: 0 0 7px 4px #FFFFFF; 
+	-webkit-box-shadow: 0 0 7px 4px #FFFFFF; 
+	box-shadow: 0 0 7px 4px #FFFFFF;
 }
 /*.swiper-slide, .swiper-slide-visible, .swiper-slide-active{
 	height:50%;
@@ -296,12 +315,12 @@ body, html{
 .pagination {
 	position: absolute;
 	z-index: 20;
-	/*text-align:center;*/
+	text-align:center;
 	/*bottom: 16%;*/
 	font-size: 0;
 	bottom:-1px;
 	left: 0;
-right: 0;
+	right: 0;
 }
 .swiper-pagination-switch {
 	display: inline-block;
